@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.artwork-frame {
+  position: absolute;
+  pointer-events: none;
+  border: 10px solid #2c2c2c;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.artwork-video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.artwork-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artwork-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ui-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  color: #fff;
+}
+
+.still-life-button {
+  padding: 10px 20px;
+  background: #aa3bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.still-life-button:hover {
+  background: #863bff;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: #fff;
+}
+
+.loading-text {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
