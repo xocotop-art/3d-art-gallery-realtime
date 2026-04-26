@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme { --font-sans: "Inter", system-ui, -apple-system, sans-serif; }
+:root { background: #050505; color-scheme: dark; }
+body { margin: 0; padding: 0; overflow: hidden; user-select: none; }
+.ui-overlay { position: absolute; inset: 0; z-index: 100; pointer-events: none; }
+.join-screen { background: radial-gradient(circle at center, #1a1a2e 0%, #050505 100%); display: flex; justify-content: center; align-items: center; pointer-events: auto; }
+.join-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); padding: 3rem; border-radius: 2rem; border: 1px border rgba(255, 255, 255, 0.1); width: 100%; max-width: 450px; text-align: center; }
+.join-card h1 { font-size: 2.5rem; font-weight: 200; letter-spacing: 0.2em; color: white; margin-bottom: 1rem; }
+.join-card p { color: rgba(255, 255, 255, 0.5); margin-bottom: 2.5rem; }
+.join-card input { width: 100%; background: rgba(255, 255, 255, 0.05); border: 1px border rgba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 1rem; color: white; margin-bottom: 1.5rem; font-size: 1.1rem; }
+.join-card button { width: 100%; background: white; color: black; padding: 1.2rem; border-radius: 1rem; font-weight: 600; font-size: 1rem; cursor: pointer; }
+.stats-card { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(10px); padding: 0.75rem 1.5rem; border-radius: 1rem; border: 1px border rgba(255, 255, 255, 0.1); }
+.minimap-container { width: 200px; height: 200px; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(10px); border-radius: 1.5rem; border: 1px border rgba(255, 255, 255, 0.1); overflow: hidden; padding: 10px; }
+.artwork-card { background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); padding: 1.5rem 2.5rem; border-radius: 2rem; border: 1px border rgba(255, 255, 255, 0.1); min-width: 300px; }
+.loading { position: fixed; inset: 0; display: flex; justify-content: center; align-items: center; background: black; color: white; text-transform: uppercase; }
